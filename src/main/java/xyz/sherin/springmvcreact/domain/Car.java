@@ -1,5 +1,7 @@
 package xyz.sherin.springmvcreact.domain;
 
 
-public record Car(long id, String make, String model, int year) {
+import org.springframework.data.annotation.Id;
+
+public record Car(@Id long id, String make, String model, int year) {
 }
